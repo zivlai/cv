@@ -93,7 +93,7 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
 .navbar-expand-md .navbar-nav .nav-link.active i{
-    color: #ffffff;
+    color: rgb(177, 217, 250);
 }
 
 
@@ -395,6 +395,10 @@ a:focus {
     background: rgba(255, 255, 255, .1);
 }
 
+.large-btn .content-inner .btn {
+    transition: all 0.5s;
+}
+
 
 /**********************************/
 /******* Content Header CSS *******/
@@ -432,7 +436,7 @@ a:focus {
 .about {
     position: relative;
     padding: 60px 30px;
-    background: #ffffff;
+    background: #f4f4f4;
     border-bottom: 30px solid #fefefe;
 }
 
@@ -501,7 +505,7 @@ a:focus {
 .education {
     position: relative;
     padding: 60px 30px;
-    background: #ffffff;
+    background: #f4f4f4;
     border-bottom: 30px solid #fefefe;
 }
 
@@ -604,14 +608,51 @@ a:focus {
 
 
 .education .edu-col h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.education .edu-col h4 {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
+    margin-bottom: 5px; 
+    color: rgb(15, 119, 204);
+    font-weight: bold;
 }
+
+.education .edu-col h5 {
+    font-size: 18px;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+    margin-bottom: 7px;
+    font-style: italic;    
+}
+
+.education .edu-col h6 {
+    font-size: 16px;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+    margin-bottom: 5px;
+}
+
+.education .edu-col h6 i{
+    color: rgb(15, 119, 204);
+    font-style: normal;
+}
+
 
 .education .edu-col p {
     margin: 0;
 }
+
+.education .edu-col ul.a i {
+    font-style: normal;
+    color: rgb(15, 119, 204);
+    font-weight: bold;
+}  
 
 
 /**********************************/
@@ -620,7 +661,7 @@ a:focus {
 .experience {
     position: relative;
     padding: 60px 30px;
-    background: #ffffff;
+    background: #f4f4f4;
     border-bottom: 30px solid #fefefe;
 }
 
@@ -677,23 +718,24 @@ a:focus {
 }
 
 .experience .exp-col h3 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 5px;
+    color: rgb(15, 119, 204);
 }
 
 .experience .exp-col h4 {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
     font-style: italic;
     margin-bottom: 5px;
 }
 
 .experience .exp-col h5 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .experience .exp-col p {
@@ -701,13 +743,48 @@ a:focus {
 }
 
 
+.experience .exp-col ul.a {
+    list-style-type: circle;
+    /* list-style: square inside url("img/circle.png"); */
+    padding-top: 0px;
+    padding-left: 20px;
+    /* font-size: 14px; */
+
+    /* NG */
+    /* background: url("img/circle.png") no-repeat left 100px;
+    padding-left: 1em;     */
+}
+
+.experience .exp-col ul li::before {
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    content: "\2022";    
+    color: #2c98f0;
+    /* Change the color */
+    font-weight: bold;
+    /* If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    font-size: 1em;
+    /* NG */
+    /* font-size: 20px; */
+  }
+
+  .experience .exp-col ul.a i {
+    font-style: normal;
+    color: rgb(15, 119, 204);
+    font-weight: bold;
+}  
+
 /**********************************/
 /*********** Service CSS **********/
 /**********************************/
 .service {
     position: relative;
     padding: 60px 30px 30px 30px;
-    background: #ffffff;
+    background: #f4f4f4;
     border-bottom: 30px solid #fefefe;
 }
 
@@ -730,31 +807,13 @@ a:focus {
     margin-bottom: 5px;
 }
 
-.experience .exp-col h4 {
-    font-size: 14px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 5px;
-}
-
-.experience .exp-col h5 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.experience .exp-col p {
-    margin: 0;
-}
-
-
 /**********************************/
 /********** Portfolio CSS *********/
 /**********************************/
 .portfolio {
     position: relative;
     padding: 60px 30px 30px 30px;
-    background: #ffffff;
+    background: #f4f4f4;
     border-bottom: 30px solid #fefefe;
 }
 
@@ -905,7 +964,7 @@ a:focus {
 /**********************************/
 .review {
     position: relative;
-    background: #ffffff;
+    background: #f4f4f4;
     border-bottom: 30px solid #fefefe;
 }
 
@@ -1045,7 +1104,7 @@ a:focus {
 .contact {
     position: relative;
     padding: 60px 30px 30px 30px;
-    background: #ffffff;
+    background: #f4f4f4;
 }
 
 .contact .contact-info {
