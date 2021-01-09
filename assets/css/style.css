@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -398,6 +398,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-transform: uppercase;
 }
 
 #hero h2 {
@@ -471,7 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
-    line-height: 36px;
+    line-height: 36px;    
   }
   #hero h2 {
     font-size: 18px;
@@ -524,12 +525,17 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
 .section-bg {
   background-color: #f3f5fa;
+}
+
+.section-bg2 {
+  background-color: #e1e8fa;
+  /* background-color: #d3defa; */
 }
 
 .section-title {
@@ -676,146 +682,11 @@ section {
   color: #47b2e4;
 } */
 
+
+/* ※ */
 /*--------------------------------------------------------------
-# Why Us
+# btn-link
 --------------------------------------------------------------*/
-.why-us .content {
-  padding: 60px 100px 0 100px;
-}
-
-.why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-  color: #37517e;
-}
-
-.why-us .content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.why-us .content p {
-  font-size: 15px;
-  color: #848484;
-}
-
-.why-us .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.why-us .accordion-list {
-  padding: 0 100px 60px 100px;
-}
-
-.why-us .accordion-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.why-us .accordion-list li + li {
-  margin-top: 15px;
-}
-
-.why-us .accordion-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-}
-
-
-/* ※ */
-.why-us .accordion-list .sub-item {
-  padding-left: 19px;
-  list-style-type: disc;
-}
-.why-us .accordion-list .sub-item li{
-  padding: 0px;
-  /* background: #fff;
-  border-radius: 4px; */
-  margin-bottom: 10px;
-}
-.why-us .accordion-list .sub-item li + li {
-  margin-top: 0px;
-}
-
-.why-us .accordion-list h1 {
-  color: #37517e;
-  font-weight: 600;
-  font-size: 20px;
-  padding-right: 10px;
-  margin-bottom: 5px;
-}
-
-.why-us .accordion-list h2 {
-  color: #444444;
-  /* font-weight: 600; */
-  font-size: 20px;
-  padding-right: 10px;
-  /* letter-spacing: 2px; */
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-.why-us .accordion-list h3 {
-  color: #444444;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  font-style: italic;
-}
-
-.why-us .accordion-list h4 {
-  color: #444444;
-  font-size: 18px;  
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.why-us .accordion-list h5 {
-  color: #444444;
-  font-size: 17px;
-  /* margin-bottom: 5px; */
-}
-
-.why-us .accordion-list h6 {
-  color: #444444;
-  font-size: 14px;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-  font-style: italic;
-}
-
-.why-us .accordion-list span {
-  color: #47b2e4;
-  /* background: #ced4e4; */
-  /* font-weight: 600;
-  font-size: 18px;
-  padding-right: 10px; */
-}
-
-.why-us .accordion-list h4 span {
-  color: #37517e;
-  background: #e8f5ff;
-  /* background: #dbeffd; */
-  /* background: rgb(232, 237, 245);   */
-  border-radius: 5px;
-  padding: 0px 3px 0px 3px;
-  font-weight: 700;
-}
-.why-us .accordion-list h5 span {
-  color: #37517e;
-  background: #e8f5ff;
-  /* background: #dbeffd; */
-  /* background: rgb(232, 237, 245);   */
-  border-radius: 5px;
-  padding: 0px 3px 0px 3px;
-  font-weight: 700;
-}
-
-
-/* ※ */
 /* Button Link */
 .btn-link-inner {
   background: #fff;
@@ -831,6 +702,20 @@ section {
   color: #fff;
 }
 
+.btn-link-mark-inner {
+  background: #e2f7ff;
+  color: #47b2e4;
+  border-radius: 5px;
+  padding: 0px 2px 0px 2px;
+  transition: 1s;
+  border: 0px;
+  font-weight: 600;
+}
+.btn-link-mark-inner:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
 .btn-link-outer {
   background: #fff;
   color: rgb(0, 92, 186);
@@ -841,6 +726,20 @@ section {
   font-weight: 600;
 }
 .btn-link-outer:hover {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.btn-link-mark-outer {
+  background: #e2f7ff;
+  color: rgb(0, 92, 186);
+  border-radius: 5px;
+  padding: 0px 2px 0px 2px;
+  transition: 1s;
+  border: 0px;
+  font-weight: 600;
+}
+.btn-link-mark-outer:hover {
   background: #47b2e4;
   color: #fff;
 }
@@ -865,10 +764,157 @@ section {
 }
 
 
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+.secExperience .content {
+  padding: 0px 100px 0 100px;
+}
+
+.secExperience .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #37517e;
+}
+
+.secExperience .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.secExperience .content p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.secExperience .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.secExperience .accordion-list {
+  padding: 0 100px 0px 100px;
+}
+
+.secExperience .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.secExperience .accordion-list li + li {
+  margin-top: 15px;
+}
+
+.secExperience .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
 
 
+/* ※ */
+.secExperience .accordion-list .sub-item {
+  padding-left: 19px;
+  list-style-type: disc;
+}
+.secExperience .accordion-list .sub-item li{
+  padding: 0px;
+  /* background: #fff;
+  border-radius: 4px; */
+  margin-bottom: 10px;
+}
+.secExperience .accordion-list .sub-item li + li {
+  margin-top: 0px;
+}
 
-.why-us .accordion-list #accordion-list-collapse-1 {
+.secExperience .accordion-list h1 {
+  color: #37517e;
+  font-weight: 600;
+  font-size: 20px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+.secExperience .accordion-list h2 {
+  color: #444444;
+  /* font-weight: 600; */
+  font-size: 20px;
+  padding-right: 10px;
+  /* letter-spacing: 2px; */
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.secExperience .accordion-list h3 {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.secExperience .accordion-list h4 {
+  color: #444444;
+  font-size: 18px;  
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.secExperience .accordion-list h5 {
+  color: #444444;
+  font-size: 17px;
+  /* margin-bottom: 5px; */
+}
+
+.secExperience .accordion-list h6 {
+  color: #444444;
+  font-size: 14px;
+  margin-bottom: 9px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.secExperience .accordion-list span {
+  color: #47b2e4;
+  /* background: #ced4e4; */
+  /* font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px; */
+}
+
+.secExperience .accordion-list h4 span {
+  color: #37517e;
+  background: #e8f5ff;
+  /* background: #dbeffd; */
+  /* background: rgb(232, 237, 245);   */
+  border-radius: 5px;
+  padding: 0px 3px 0px 3px;
+  font-weight: 700;
+}
+
+.secExperience .accordion-list h4 .span-bg {
+  color: #444444;
+  background: #e2f7ff;
+  /* background: #dbeffd; */
+  /* background: rgb(232, 237, 245);   */
+  border-radius: 5px;
+  padding: 0px 3px 0px 3px;
+  font-weight: 700;
+}
+
+.secExperience .accordion-list h5 span {
+  color: #37517e;
+  background: #e8f5ff;
+  /* background: #dbeffd; */
+  /* background: rgb(232, 237, 245);   */
+  border-radius: 5px;
+  padding: 0px 3px 0px 3px;
+  font-weight: 700;
+}
+
+
+.secExperience .accordion-list #accordion-list-collapse-1 {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -879,7 +925,7 @@ section {
   outline: none;
 }
 
-.why-us .accordion-list #accordion-list-collapse-2 {
+.secExperience .accordion-list #accordion-list-collapse-2 {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -890,7 +936,7 @@ section {
   outline: none;
 }
 
-.why-us .accordion-list #accordion-list-collapse-3 {
+.secExperience .accordion-list #accordion-list-collapse-3 {
   display: block;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -901,62 +947,294 @@ section {
   outline: none;
 }
 
-.why-us .accordion-list i {
+.secExperience .accordion-list i {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.why-us .accordion-list p {
+.secExperience .accordion-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.why-us .accordion-list .icon-show {
+.secExperience .accordion-list .icon-show {
   display: none;
 }
 
-.why-us .accordion-list a.collapsed {
+.secExperience .accordion-list a.collapsed {
   color: #343a40;
 }
 
-.why-us .accordion-list a.collapsed:hover {
+.secExperience .accordion-list a.collapsed:hover {
   color: #47b2e4;
 }
 
-.why-us .accordion-list a.collapsed .icon-show {
+.secExperience .accordion-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.why-us .accordion-list a.collapsed .icon-close {
+.secExperience .accordion-list a.collapsed .icon-close {
   display: none;
 }
 
 @media (max-width: 1024px) {
-  .why-us .content, .why-us .accordion-list {
+  .secExperience .content, .secExperience .accordion-list {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (max-width: 992px) {
-  .why-us .img {
+  .secExperience .img {
     min-height: 400px;
   }
-  .why-us .content {
+  .secExperience .content {
     padding-top: 30px;
   }
-  .why-us .accordion-list {
+  .secExperience .accordion-list {
     padding-bottom: 30px;
   }
 }
 
 @media (max-width: 575px) {
-  .why-us .img {
+  .secExperience .img {
     min-height: 200px;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Background
+--------------------------------------------------------------*/
+.secBackground .content {
+  padding: 0px 100px 0 100px;
+}
+
+.secBackground .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #37517e;
+}
+
+.secBackground .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.secBackground .content p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.secBackground .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.secBackground .accordion-list {
+  padding: 0 100px 0px 100px;
+}
+
+.secBackground .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.secBackground .accordion-list li + li {
+  margin-top: 15px;
+}
+
+.secBackground .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+
+/* ※ */
+.secBackground .accordion-list .sub-item {
+  padding-left: 19px;
+  list-style-type: disc;
+}
+.secBackground .accordion-list .sub-item li{
+  padding: 0px;
+  /* background: #fff;
+  border-radius: 4px; */
+  margin-bottom: 10px;
+}
+.secBackground .accordion-list .sub-item li + li {
+  margin-top: 0px;
+}
+
+.secBackground .accordion-list h1 {
+  color: #37517e;
+  font-weight: 600;
+  font-size: 20px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+.secBackground .accordion-list h2 {
+  color: #444444;
+  /* font-weight: 600; */
+  font-size: 20px;
+  padding-right: 10px;
+  /* letter-spacing: 2px; */
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.secBackground .accordion-list h3 {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+
+.secBackground .accordion-list h4 {
+  color: #444444;
+  font-size: 18px;  
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.secBackground .accordion-list h5 {
+  color: #444444;
+  font-size: 17px;
+  /* margin-bottom: 5px; */
+}
+
+.secBackground .accordion-list h6 {
+  color: #444444;
+  font-size: 14px;
+  margin-bottom: 9px;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.secBackground .accordion-list span {
+  color: #47b2e4;
+  /* background: #ced4e4; */
+  /* font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px; */
+}
+
+.secBackground .accordion-list h4 span {
+  color: #37517e;
+  background: #e8f5ff;
+  /* background: #dbeffd; */
+  /* background: rgb(232, 237, 245);   */
+  border-radius: 5px;
+  padding: 0px 3px 0px 3px;
+  font-weight: 700;
+}
+
+.secBackground .accordion-list h5 span {
+  color: #37517e;
+  background: #e8f5ff;
+  /* background: #dbeffd; */
+  /* background: rgb(232, 237, 245);   */
+  border-radius: 5px;
+  padding: 0px 3px 0px 3px;
+  font-weight: 700;
+}
+
+
+.secBackground .accordion-list #accordion-list-collapse-1 {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+}
+
+.secBackground .accordion-list #accordion-list-collapse-2 {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+}
+
+.secBackground .accordion-list #accordion-list-collapse-3 {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+}
+
+.secBackground .accordion-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.secBackground .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.secBackground .accordion-list .icon-show {
+  display: none;
+}
+
+.secBackground .accordion-list a.collapsed {
+  color: #343a40;
+}
+
+.secBackground .accordion-list a.collapsed:hover {
+  color: #47b2e4;
+}
+
+.secBackground .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.secBackground .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .secBackground .content, .secBackground .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .secBackground .img {
+    min-height: 400px;
+  }
+  .secBackground .content {
+    padding-top: 30px;
+  }
+  .secBackground .accordion-list {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .secBackground .img {
+    min-height: 200px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Skills
@@ -1114,6 +1392,98 @@ section {
     align-items: center;
     justify-content: flex-end;
   }
+}
+
+
+/*--------------------------------------------------------------
+# ROI
+--------------------------------------------------------------*/
+.ROI #ROI-flters {
+  list-style: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.ROI #ROI-flters li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 5px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  transition: all 0.3s;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.ROI #ROI-flters li:hover, .ROI #ROI-flters li.filter-active {
+  background: #47b2e4;
+  color: #fff;
+}
+
+.ROI .ROI-item {
+  margin-bottom: 30px;
+}
+
+.ROI .ROI-item .ROI-img {
+  overflow: hidden;
+}
+
+.ROI .ROI-item .ROI-img img {
+  transition: all 0.6s;
+}
+
+.ROI .ROI-item .ROI-info {
+  opacity: 0;
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  z-index: 3;
+  right: 15px;
+  transition: all 0.3s;
+  background: rgba(55, 81, 126, 0.8);
+  padding: 10px 15px;
+}
+
+.ROI .ROI-item .ROI-info h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.ROI .ROI-item .ROI-info p {
+  color: #f9fcfe;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.ROI .ROI-item .ROI-info .preview-link, .ROI .ROI-item .ROI-info .details-link {
+  position: absolute;
+  right: 40px;
+  font-size: 24px;
+  top: calc(50% - 18px);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.ROI .ROI-item .ROI-info .preview-link:hover, .ROI .ROI-item .ROI-info .details-link:hover {
+  color: #47b2e4;
+}
+
+.ROI .ROI-item .ROI-info .details-link {
+  right: 10px;
+}
+
+.ROI .ROI-item:hover .ROI-img img {
+  transform: scale(1.15);
+}
+
+.ROI .ROI-item:hover .ROI-info {
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------

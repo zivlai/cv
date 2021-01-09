@@ -159,6 +159,23 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
+
+    // ROI    
+    var ROIIsotope = $('.ROI-container').isotope({
+      itemSelector: '.ROI-item'
+    });
+
+    $('#ROI-flters li').on('click', function() {
+      $("#ROI-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      ROIIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      aos_init();
+    });
+
+    // Portfolio    
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
     });
@@ -180,6 +197,16 @@
       });
     });
   });
+
+
+  // ROI details carousel
+  $(".ROI-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
 
   // Portfolio details carousel
   $(".portfolio-details-carousel").owlCarousel({
