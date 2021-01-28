@@ -157,18 +157,20 @@
               This website is a collection of personal interests, information, and projects mainly including the following types of applications:
               <!-- ● Non consectetur <a class="btn-link scrollto" href="#services">Service</a> duis AAAA? -->
             </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Robotics Control</li>
-              <li><i class="ri-check-double-line"></i> PLC Programming</li>
-              <li><i class="ri-check-double-line"></i> Data Analysis</li>
-              <li><i class="ri-check-double-line"></i> Web Application</li>
-            </ul>
+            <!-- <div class="about-content-item-div">
+              <ul>
+                <li><i class="ri-check-double-line"></i> Robotics Control</li>
+                <li><i class="ri-check-double-line"></i> PLC Programming</li>
+                <li><i class="ri-check-double-line"></i> Data Analysis</li>
+                <li><i class="ri-check-double-line"></i> Web Application</li>
+              </ul>
+            </div> -->
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
               There is a variety of projects made in this lab. Some of them are able to be demonstrated in this website. Click the button to know more about these projects.
             </p>
-            <a href="#portfolio" class="btn-learn-more scrollto">Project</a>            
+            <div class="btn-learn-more-div"><a href="#portfolio" class="btn-learn-more scrollto">Project</a></div>
             <!-- <div id="qrcode" style="display:block; vertical-align:middle; width:100px; height:100px; margin-top:15px;"></div> -->
           </div>          
         </div>
@@ -189,6 +191,7 @@
           <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-git-compare"></i></div>
+              <!-- <div class="icon"><i class="bx bx-analyse"></i></div> -->
               <!-- <div class="icon"><i class="bx bx-bot"></i></div> -->
               <h4><a href="">Robotics Control</a></h4>
               <p>An expert of Industrial Robotics Arm Control for applications in various industries.</p>
@@ -219,21 +222,29 @@
             </div>
           </div>
 
+          <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-search-alt"></i></div>
+              <h4><a href="">Metrology</a></h4>
+              <p>An experienced metrology technician conducted academical reasearh in remarkable metrology labs in Taiwan.</p>
+            </div>
+          </div>
+
           <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="500">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-globe"></i></div>
               <h4><a href="">Multilingual</a></h4>
-              <p>A native Chinese speaker as well as a fluent English speaker, and organize an English study group for 4+ years.</p>
+              <p>A native Chinese speaker, a pre-advanced Japanese speaker with JLPT N1, and a fluent English speaker organized an English study group for 4+ years.</p>
             </div>
           </div>        
 
-          <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="600">
+          <!-- <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="600">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-comment-dots"></i></div>
               <h4><a href="">Japanese Speaker</a></h4>
               <p>A fluent Japanese speaker with JLPT N1 and takes Japanese as a life-long learning interest.</p>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -722,15 +733,15 @@
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <!-- <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li> -->
-          <li data-filter=".filter-web">Web</li>
+          <li data-filter="*" class="filter-portfolio-active">All</li>
+          <!-- <li data-filter=".filter-portfolio-app">App</li>
+          <li data-filter=".filter-portfolio-card">Card</li> -->
+          <li data-filter=".filter-portfolio-web">Web</li>
         </ul>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-web">
             <div class="portfolio-img"><img src="assets/img/project/STCESG_R.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>English Speaking Group Recruitment</h4>
@@ -740,7 +751,7 @@
             </div>
           </div>
           
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-web">
             <div class="portfolio-img"><img src="assets/img/project/STCESG_O.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>English Speaking Group Orientation</h4>
@@ -750,7 +761,7 @@
             </div>
           </div>          
 
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-app">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>App 1</h4>
@@ -760,7 +771,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-web">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Web 3</h4>
@@ -770,7 +781,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-app">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>App 2</h4>
@@ -780,7 +791,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-card">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Card 2</h4>
@@ -790,7 +801,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-web">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Web 2</h4>
@@ -800,7 +811,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-app">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>App 3</h4>
@@ -810,7 +821,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-card">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Card 1</h4>
@@ -820,7 +831,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-card">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Card 3</h4>
@@ -830,7 +841,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-portfolio-web">
             <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
             <div class="portfolio-info">
               <h4>Web 3</h4>
@@ -843,7 +854,74 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Document Section ======= -->
+    <section id="document" class="document">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Document</h2>
+          <p>Some documents.<br>
+             Click the button to know more about these documents.</p>
+        </div>
+
+        <ul id="document-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-document-active">All</li>
+          <li data-filter=".filter-document-paper">Paper</li>
+          <li data-filter=".filter-document-metrology">Metrology</li>
+          <!-- <li data-filter=".filter-document-web">Web</li> -->
+        </ul>
+
+        <div class="row document-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 document-item filter-document-paper filter-document-metrology">
+            <div class="document-img"><img src="assets/img/doc/DVD.png" class="img-fluid" alt=""></div>
+            <div class="document-info">
+              <h4>DVD displacement spindle</h4>
+              <p>Paper</p>
+              <a href="assets/img/doc/DVD.png" data-gall="documentGallery" class="venobox preview-link" title="DVD displacement spindle"><i class="bx bx-plus"></i></a>
+              <a href="https://www.researchgate.net/profile/Kuang-Chao_Fan/publication/228775932_A_displacement_spindle_in_a_micronano_level/links/56a6145508ae6c437c1acd54/A-displacement-spindle-in-a-micro-nano-level.pdf" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 document-item filter-document-paper filter-document-metrology">
+            <div class="document-img"><img src="assets/img/doc/UM.png" class="img-fluid" alt=""></div>
+            <div class="document-info">
+              <h4>Intelligent  Nano-positioning</h4>
+              <p>Paper</p>
+              <a href="assets/img/doc/UM.png" data-gall="documentGallery" class="venobox preview-link" title="DVD displacement spindle"><i class="bx bx-plus"></i></a>
+              <a href="https://www.researchgate.net/profile/Kuang-Chao_Fan/publication/279561655_An_intelligent_nano-positioning_control_system_driven_by_an_ultrasonic_motor/links/56a613e208ae6c437c1aca66/An-intelligent-nano-positioning-control-system-driven-by-an-ultrasonic-motor.pdf" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>        
+
+          <div class="col-lg-4 col-md-6 document-item filter-document-metrology">
+            <div class="document-img"><img src="assets/img/doc/Flatness.png" class="img-fluid" alt=""></div>
+            <div class="document-info">
+              <h4>Flatness Calibration System</h4>
+              <p>Metrology</p>
+              <a href="assets/img/doc/Flatness.png" data-gall="documentGallery" class="venobox preview-link" title="Flatness Calibration System"><i class="bx bx-plus"></i></a>
+              <!-- <a href="" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 document-item filter-document-metrology">
+            <div class="document-img"><img src="assets/img/doc/Roundness.png" class="img-fluid" alt=""></div>
+            <div class="document-info">
+              <h4>CNC Roundness</h4>
+              <p>Metrology</p>
+              <a href="assets/img/doc/Roundness.png" data-gall="documentGallery" class="venobox preview-link" title="CNC Contouring-error"><i class="bx bx-plus"></i></a>
+              <!-- <a href="" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>          
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Document Section -->
+
 
     <!-- ======= Team Section ======= -->
     <!-- <section id="team" class="team section-bg">
@@ -1068,6 +1146,12 @@
 
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
+
+              <!-- <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4><div id="qrcode" style="display:inline; vertical-align:middle; width:100px; height:100px; margin-top:15px;"></div> </h4>                
+              </div>               -->
+
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
@@ -1153,8 +1237,9 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-6 col-md-6 footer-contact">
+          <div class="col-lg-12 col-md-12 footer-contact">
             <h3>Ziv's Tech Lab</h3>
+            <!-- <p>Keep exploring the technological world.<br> -->
             <p>West district, Taichung, Taiwan<br>
               <!-- A108 Adam Street <br>
               New York, NY 535022<br>
@@ -1162,22 +1247,22 @@
               <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> example@gmail.com<br> -->
             </p>
-            <div id="qrcode" style="display:block; vertical-align:middle; width:100px; height:100px; margin-top:15px;"></div>
+            <div id="qrcode" style="display:inline-block; vertical-align:middle; width:100px; height:100px; margin-top:15px;"></div>
           </div>
 
-          <div class="col-lg-6 col-md-6 footer-links">
+          <!-- <div class="col-lg-3 col-md-6 footer-links">
             <h4>Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#hero" class="scrollto">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about" class="scrollto">About</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services" class="scrollto">Skill</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#idExperience" class="scrollto">Experience</a></li>
-              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#idBackground" class="scrollto">Background</a></li> -->
+              <li><i class="bx bx-chevron-right"></i> <a href="#idBackground" class="scrollto">Background</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#portfolio" class="scrollto">Project</a></li>
             </ul>
           </div>
 
-          <!-- <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -1186,9 +1271,9 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div> -->
+          </div>
 
-          <!-- <div class="col-lg-4 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Access</h4>
             <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
             <div class="social-links mt-3">
