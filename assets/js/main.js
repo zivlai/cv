@@ -190,6 +190,21 @@
       aos_init();
     });
 
+    // Document    
+    var documentIsotope = $('.document-container').isotope({
+      itemSelector: '.document-item'
+    });
+
+    $('#document-flters li').on('click', function() {
+      $("#document-flters li").removeClass('filter-active');
+      $(this).addClass('filter-active');
+
+      documentIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      aos_init();
+    });    
+
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox({
@@ -215,6 +230,14 @@
     loop: true,
     items: 1
   });
+
+  // Document details carousel
+  $(".document-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });  
 
   // Init AOS
   function aos_init() {
